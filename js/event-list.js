@@ -1,5 +1,3 @@
-
-
 function makeEvent(event) {
     const html = /*html*/`
         <li class="event">
@@ -12,14 +10,12 @@ function makeEvent(event) {
             </h4>
         </li>
     `;
-
     const template = document.createElement('template');
 
     template.innerHTML = html;
 
     return template.content;
 }
-
 const list = document.getElementById('events');
 
 const eventList = {
@@ -30,7 +26,6 @@ const eventList = {
     },
     add(event) {
         const dom = makeEvent(event);
-
         list.appendChild(dom);
     }
 };
